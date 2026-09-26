@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Direct Connect Electrical & Air | Perth</title>
+  <meta name="description" content="Professional electrical and air conditioning services in Perth. Contact Direct Connect Electrical & Air for your next project.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #08111c;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* NAV */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8, 17, 28, 0.96);
+      border-bottom: 1px solid #213040;
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .logo span {
+      color: #36b9ff;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: #d5dce5;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: #36b9ff;
+    }
+
+    .nav-button {
+      background: #36b9ff;
+      color: #07101a !important;
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(8,17,28,0.68), rgba(8,17,28,0.93)),
+        url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 780px;
+      padding: 80px 0;
+    }
+
+    .tag {
+      color: #36b9ff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 7vw, 5.2rem);
+      line-height: 1.02;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      color: #d0d8e2;
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 6px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .button-primary {
+      background: #36b9ff;
+      color: #07101a;
+    }
+
+    .button-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      border: 1px solid #5c6b7a;
+      color: #ffffff;
+    }
+
+    .button-secondary:hover {
+      border-color: #36b9ff;
+      color: #36b9ff;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    .section-heading h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: #aeb9c6;
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: #0d1825;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #122131;
+      border: 1px solid #243648;
+      padding: 30px;
+      border-radius: 10px;
+      transition: 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: #36b9ff;
+    }
+
+    .service-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      background: #36b9ff;
+      color: #07101a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .service-card p {
+      color: #aeb9c6;
+      font-size: 0.95rem;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 450px;
+      border-radius: 12px;
+      background:
+        url("https://images.unsplash.com/photo-1631545806609-8e1d7a9f8e50?auto=format&fit=crop&w=1200&q=80")
+        center/cover;
+    }
+
+    .about-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: #b4bfcc;
+      margin-bottom: 18px;
+    }
+
+    .about-list {
+      list-style: none;
+      margin-top: 25px;
+    }
+
+    .about-list li {
+      margin-bottom: 12px;
+      color: #d9e0e8;
+    }
+
+    .about-list li::before {
+      content: "✓";
+      color: #36b9ff;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* TWO SERVICES */
+
+    .split-section {
+      background: #0d1825;
+    }
+
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .split-card {
+      padding: 45px 35px;
+      background: #122131;
+      border: 1px solid #243648;
+      border-radius: 12px;
+    }
+
+    .split-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .split-card p {
+      color: #aeb9c6;
+      margin-bottom: 20px;
+    }
+
+    .split-card ul {
+      list-style: none;
+    }
+
+    .split-card li {
+      margin-bottom: 10px;
+      color: #d9e0e8;
+    }
+
+    .split-card li::before {
+      content: "→";
+      color: #36b9ff;
+      margin-right: 10px;
+    }
+
+    /* PROCESS */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .process-card {
+      text-align: center;
+      padding: 35px 25px;
+      background: #0f1c2a;
+      border: 1px solid #243648;
+      border-radius: 10px;
+    }
+
+    .process-number {
+      color: #36b9ff;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .process-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .process-card p {
+      color: #aeb9c6;
+    }
+
+    /* CTA */
+
+    .cta {
+      text-align: center;
+      background:
+        linear-gradient(rgba(8,17,28,0.9), rgba(8,17,28,0.9)),
+        url("https://images.unsplash.com/photo-1631545806609-8e1d7a9f8e50?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+    }
+
+    .cta h2 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #c1cad5;
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 50px;
+    }
+
+    .contact-info h2 {
+      font-size: 2.3rem;
+      margin-bottom: 15px;
+    }
+
+    .contact-info > p {
+      color: #aeb9c6;
+      margin-bottom: 25px;
+    }
+
+    .contact-detail {
+      margin-bottom: 18px;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: #36b9ff;
+      margin-bottom: 4px;
+    }
+
+    form {
+      background: #122131;
+      border: 1px solid #243648;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 0.9rem;
+      color: #d9e0e8;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 13px;
+      background: #08111c;
+      color: #ffffff;
+      border: 1px solid #304356;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: #36b9ff;
+    }
+
+    form button {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #213040;
+      padding: 30px 0;
+      color: #8795a5;
+      font-size: 0.9rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .service-grid,
+      .process-grid,
+      .about-grid,
+      .split-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+        min-height: 300px;
+      }
+
+      .hero {
+        min-height: 80vh;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .cta h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header>
+    <div class="container">
+      <nav>
+
+        <a href="#" class="logo">
+          DIRECT CONNECT <span>ELECTRICAL & AIR</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#process">Process</a>
+          <a href="#contact" class="nav-button">Get a Quote</a>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="tag">
+          Electrical & Air Conditioning
+        </div>
+
+        <h1>
+          Electrical & Air Solutions For Perth.
+        </h1>
+
+        <p>
+          Professional electrical and air conditioning services for homes,
+          businesses and property projects across Perth.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#contact" class="button button-primary">
+            Get a Quote
+          </a>
+
+          <a href="#services" class="button button-secondary">
+            View Services
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <h2>Our Services</h2>
+
+        <p>
+          Electrical and air conditioning services for residential and commercial properties.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        <div class="service-card">
+
+          <div class="service-icon">01</div>
+
+          <h3>Electrical Services</h3>
+
+          <p>
+            Electrical installation, maintenance, repairs and upgrades.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">02</div>
+
+          <h3>Air Conditioning</h3>
+
+          <p>
+            Air conditioning services for homes, offices and other properties.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">03</div>
+
+          <h3>Electrical Repairs</h3>
+
+          <p>
+            Assistance with electrical faults, repairs and maintenance.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">04</div>
+
+          <h3>Lighting</h3>
+
+          <p>
+            Lighting installation and upgrades for indoor and outdoor spaces.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">05</div>
+
+          <h3>Air Conditioning Installation</h3>
+
+          <p>
+            Air conditioning installation for residential and suitable commercial applications.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">06</div>
+
+          <h3>Electrical Upgrades</h3>
+
+          <p>
+            Electrical improvements and upgrades for existing properties.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div class="about-image"></div>
+
+
+        <div class="about-text">
+
+          <h2>One Point of Contact for Electrical & Air</h2>
+
+          <p>
+            Direct Connect Electrical & Air provides electrical and air conditioning
+            services for residential and commercial customers.
+          </p>
+
+          <p>
+            From electrical work and lighting to air conditioning projects,
+            get in touch to discuss what you need.
+          </p>
+
+
+          <ul class="about-list">
+
+            <li>Electrical services</li>
+            <li>Air conditioning services</li>
+            <li>Repairs and maintenance</li>
+            <li>Lighting and electrical upgrades</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ELECTRICAL + AIR -->
+
+  <section class="split-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <h2>Electrical & Air</h2>
+
+        <p>
+          Two core services, one direct point of contact.
+        </p>
+
+      </div>
+
+
+      <div class="split-grid">
+
+        <div class="split-card">
+
+          <h3>Electrical</h3>
+
+          <p>
+            Electrical services for residential and commercial properties.
+          </p>
+
+          <ul>
+            <li>General electrical work</li>
+            <li>Electrical repairs</li>
+            <li>Lighting</li>
+            <li>Electrical upgrades</li>
+            <li>Property projects</li>
+          </ul>
+
+        </div>
+
+
+        <div class="split-card">
+
+          <h3>Air Conditioning</h3>
+
+          <p>
+            Air conditioning solutions for comfortable residential and commercial spaces.
+          </p>
+
+          <ul>
+            <li>Air conditioning installation</li>
+            <li>Air conditioning servicing</li>
+            <li>Air conditioning repairs</li>
+            <li>System upgrades</li>
+            <li>Residential and commercial applications</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROCESS -->
+
+  <section id="process">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <h2>How It Works</h2>
+
+        <p>
+          A simple process from your first enquiry through to the job.
+        </p>
+
+      </div>
+
+
+      <div class="process-grid">
+
+        <div class="process-card">
+
+          <div class="process-number">01</div>
+
+          <h3>Contact Us</h3>
+
+          <p>
+            Tell us about your electrical or air conditioning requirements.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">02</div>
+
+          <h3>Discuss the Job</h3>
+
+          <p>
+            Discuss the work required and the best approach for your project.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">03</div>
+
+          <h3>Get the Work Done</h3>
+
+          <p>
+            Arrange the work and move forward with your project.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Need Electrical or Air Conditioning Work?</h2>
+
+      <p>
+        Contact Direct Connect Electrical & Air to discuss your project.
+      </p>
+
+      <a href="#contact" class="button button-primary">
+        Request a Quote
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <h2>Get in Touch</h2>
+
+          <p>
+            Contact Direct Connect Electrical & Air about your next project.
+          </p>
+
+
+          <div class="contact-detail">
+
+            <strong>Phone</strong>
+
+            <span>0400 000 000</span>
+
+          </div>
+
+
+          <div class="contact-detail">
+
+            <strong>Email</strong>
+
+            <span>info@example.com</span>
+
+          </div>
+
+
+          <div class="contact-detail">
+
+            <strong>Service Area</strong>
+
+            <span>Perth, Western Australia</span>
+
+          </div>
+
+        </div>
+
+
+        <form action="#" method="POST">
+
+          <div class="form-group">
+
+            <label for="name">Name</label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="phone">Phone</label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Your phone number"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="email">Email</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="service">Service Required</label>
+
+            <select id="service" name="service">
+
+              <option>Electrical Services</option>
+              <option>Air Conditioning</option>
+              <option>Electrical Repairs</option>
+              <option>Lighting</option>
+              <option>Air Conditioning Installation</option>
+              <option>Electrical Upgrades</option>
+              <option>Other</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us about your project..."
+            ></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="button button-primary"
+          >
+            Send Enquiry
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-content">
+
+        <div>
+          © 2026 Direct Connect Electrical & Air. All rights reserved.
+        </div>
+
+        <div>
+          Perth, Western Australia
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
